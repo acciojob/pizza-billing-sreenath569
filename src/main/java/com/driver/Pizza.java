@@ -29,17 +29,17 @@ public class Pizza {
 
     public void addExtraCheese(){
         // your code goes here
-        isExtraCheeseAdded=true;
+        this.isExtraCheeseAdded=true;
     }
 
     public void addExtraToppings(){
         // your code goes here
-        isExtraToppingsAdded = true;
+        this.isExtraToppingsAdded = true;
     }
 
     public void addTakeaway(){
         // your code goes here
-        isPaperBagRequired = true;
+        this.isPaperBagRequired = true;
     }
 
     public String getBill(){
@@ -47,15 +47,15 @@ public class Pizza {
 
         if(isVeg){
             bill += "Base Price Of The Pizza: 300\n";
-            if(isExtraCheeseAdded){
+            if(this.isExtraCheeseAdded){
                 bill += "Extra Cheese Added: 80\n";
                 this.price += 80;
             }
-            if(isExtraToppingsAdded){
+            if(this.isExtraToppingsAdded){
                 bill += "Extra Toppings Added: 70\n";
                 this.price += 70;
             }
-            if(isPaperBagRequired){
+            if(this.isPaperBagRequired){
                 bill += "Paperbag Added: 20\n";
                 this.price += 20;
             }
@@ -63,15 +63,15 @@ public class Pizza {
         }
         else{
             bill += "Base Price Of The Pizza: 400\n";
-            if(isExtraCheeseAdded){
+            if(this.isExtraCheeseAdded){
                 bill += "Extra Cheese Added: 80\n";
                 this.price += 80;
             }
-            if(isExtraToppingsAdded){
+            if(this.isExtraToppingsAdded){
                 bill += "Extra Toppings Added: 120\n";
                 this.price += 120;
             }
-            if(isPaperBagRequired){
+            if(this.isPaperBagRequired){
                 bill += "Paperbag Added: 20\n";
                 this.price += 20;
             }
